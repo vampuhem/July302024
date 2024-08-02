@@ -1,4 +1,10 @@
-resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name
-  location = var.rg_location
+variable "rg_name" {
+    type = string
+    default = "k8s_testing"
+  
+}
+
+variable "rg_location" {
+  type = string
+  default = "East US"
 }
